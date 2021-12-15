@@ -3,9 +3,13 @@ import {
 	Button,
 	Container, 
 	Box, 
+	Icon,
 	Heading, 
 	Image, 
 	Link,
+	SimpleGrid,
+	List,
+	ListItem,
 	useColorModeValue 
 } from '@chakra-ui/react';
 import { ChevronRightIcon } from '@chakra-ui/icons';
@@ -15,11 +19,32 @@ import Layout from '../components/layouts/article';
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
 import { BioSection, BioYear } from '../components/bio';
+import { GridItem } from '../components/grid-item';
+import {
+	IoLogoTwitter,
+	IoLogoInstagram,
+	IoLogoGithub,
+	IoLogoDiscord
+} from 'react-icons/io5';
 
 const Page = () => {
 	return(
 		<Layout>
 		<Container>
+			<Box
+				align="center"
+				my={3}
+			>
+				<Image 
+						borderColor="whiteAlpha.500"
+						borderWidth={2}
+						borderStyle="solid"
+						maxWidth="350px"
+						display="inline-block"
+						src="/evangelion.gif"
+						alt="Eva"
+					/>
+			</Box>
 			<Box 
 				borderRadius="lg" 
 				bg={ useColorModeValue('whiteAlpha.500', 'whiteAlpha.200') } 
@@ -53,7 +78,7 @@ const Page = () => {
 						maxWidth="150px"
 						display="inline-block"
 						borderRadius="full"
-						src="/images/perfil.png"
+						src="/images/perfil.jpg"
 						alt="Profile Image"
 					/>
 				</Box>
@@ -110,6 +135,27 @@ const Page = () => {
 				</Paragraph>
 			</Section>
 
+			<Section delay={0.3}>
+				<Heading as="h3" variant="section-title">
+					On the web
+				</Heading>
+				<List>
+					<ListItem>
+						<Link href="https://github.com/mijel861999" target="_blank">
+							<Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoGithub}/>}>
+								@mijel861999	
+							</Button>
+						</Link>
+					</ListItem>
+					<ListItem>
+						<Link href="https://www.instagram.com/mijelpalcabello/" target="_blank">
+							<Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoInstagram}/>}>
+								@mijelpalcabello
+							</Button>
+						</Link>
+					</ListItem>
+				</List>
+			</Section>
 		</Container>
 		</Layout>
 	)
