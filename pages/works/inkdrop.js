@@ -32,7 +32,7 @@ const Work = () => {
 					<ListItem>
 						<Meta>Blogpost</Meta>
 						<Link href="https://blog.inkdrop.app/">
-							How i've Attracted the first 500 Paid Users For my <ExternalLinkIcon mx="2px" />
+							Como solucione los errores <ExternalLinkIcon mx="2px" />
 						</Link>
 					</ListItem>
 				</List>

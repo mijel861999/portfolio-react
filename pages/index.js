@@ -7,7 +7,6 @@ import {
 	Heading, 
 	Image, 
 	Link,
-	SimpleGrid,
 	List,
 	ListItem,
 	useColorModeValue 
@@ -19,12 +18,10 @@ import Layout from '../components/layouts/article';
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
 import { BioSection, BioYear } from '../components/bio';
-import { GridItem } from '../components/grid-item';
 import {
 	IoLogoTwitter,
 	IoLogoInstagram,
 	IoLogoGithub,
-	IoLogoDiscord
 } from 'react-icons/io5';
 
 const Page = () => {
@@ -53,7 +50,7 @@ const Page = () => {
 				p={3} 
 				align="center"
 			>
-				Hello, soy Miguel, soy un desarrollador fontend de Perú!
+				Hola, soy Miguel, soy un desarrollador de Perú!
 			</Box>
 
 
@@ -91,18 +88,16 @@ const Page = () => {
 				>
 					Work
 				</Heading>
-				<Paragraph>Miguel is a freelance and a full passion for building digital services/stu for all things lauchings products, from way to solving real - life problems with hanging out with his camera. Currently, product called { '' }
-					<NextLink href="/works/inkdrop">
-						<Link>
-							Inkdropo
+				<Paragraph>Miguel es un desarrollador de aplicaciones, también es un fanático de la música, tiene un proyecto musical llamado { '' }
+						<Link href="https://www.instagram.com/mitt_awing/">
+							Mitt Awing
 						</Link>
-					</NextLink>
 					.
 				</Paragraph>
 				<Box align="center" my={4}>
 					<NextLink href="/works">
 						<Button rightIcon={ <ChevronRightIcon /> } colorScheme="teal">
-							My Portfolio
+							Mi portafolio
 						</Button>
 					</NextLink>
 				</Box>
@@ -118,7 +113,15 @@ const Page = () => {
 				</BioSection>
 				<BioSection>
 					<BioYear>2015</BioYear>
+					Termine el colegio en Saco oliveros
+				</BioSection>
+				<BioSection>
+					<BioYear>2016</BioYear>
 					Empecé a estudiar ingeniería de Industrial en la Universidad de ingeniería y tecnología (UTEC)
+				</BioSection>
+				<BioSection>
+					<BioYear>2019</BioYear>
+					Empecé a estudiar Ingeniería de sistemas en la Universidad Nacional Federico Villarreal
 				</BioSection>
 			</Section>
 			
@@ -127,11 +130,11 @@ const Page = () => {
 					Mis aficiones
 				</Heading>
 				<Paragraph>
-					Art, Music,{''}
+					Art, Music ,{''}
 					<Link href="https://illust.odoruinu.net/">
-						Drawing
+						 Drawing
 					</Link>
-					,Playing Drums, {''}
+					,Making beats {''}
 				</Paragraph>
 			</Section>
 
@@ -150,6 +153,13 @@ const Page = () => {
 					<ListItem>
 						<Link href="https://www.instagram.com/mijelpalcabello/" target="_blank">
 							<Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoInstagram}/>}>
+								@mijelpalcabello
+							</Button>
+						</Link>
+					</ListItem>
+					<ListItem>
+						<Link href="https://twitter.com/home" target="_blank">
+							<Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoTwitter}/>}>
 								@mijelpalcabello
 							</Button>
 						</Link>
