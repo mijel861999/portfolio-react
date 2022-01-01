@@ -24,6 +24,8 @@ import {
 	IoLogoGithub,
 } from 'react-icons/io5';
 
+
+
 const Page = () => {
 	return(
 		<Layout>
@@ -56,7 +58,7 @@ const Page = () => {
 
 			<Box display={{ md: 'flex' }}>
 				<Box flexGrow={1}>
-					<Heading as="h2" variant="page-title">
+					<Heading className="text_effect" as="h2" variant="page-title">
 						Miguel Castillo 
 					</Heading>
 
