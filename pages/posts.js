@@ -1,9 +1,10 @@
-import { Container, Heading, SimpleGrid } from '@chakra-ui/react';
+import { Container, Heading } from '@chakra-ui/react';
+// import { Container, Heading, SimpleGrid } from '@chakra-ui/react';h 
 import Layout from '../components/layouts/article';
-import Section from '../components/section';
-import { GridItem } from '../components/grid-item';
+// import Section from '../components/section';
+// import { GridItem } from '../components/grid-item';
 
-import thumbNail from '../public/images/perfil.png';
+// import thumbNail from '../public/images/perfil.png';
 
 const Posts = () => (
 	<Layout title="Posts">
@@ -12,7 +13,7 @@ const Posts = () => (
 				Popular Posts
 			</Heading>
 			
-			<Section delay={0.1}>
+			{/* <Section delay={0.1}>
 				<SimpleGrid columns={[1,2,2]} gap={6}>
 					<GridItem 
 						href="/"
@@ -40,7 +41,8 @@ const Posts = () => (
 						thumbnail={ thumbNail }	
 					/>
 				</SimpleGrid>
-			</Section>
+			</Section> */}
+			<h1>Todavía no hay posts :c</h1>
 		</Container>
 	</Layout>
 )

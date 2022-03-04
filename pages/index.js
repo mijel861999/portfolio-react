@@ -52,7 +52,7 @@ const Page = () => {
 				p={3} 
 				align="center"
 			>
-				Hola, soy Miguel, soy un desarrollador de Perú!
+				Hola, soy Miguel, soy un desarrollador y diseñador web de Perú!
 			</Box>
 
 
@@ -62,7 +62,7 @@ const Page = () => {
 						Miguel Castillo 
 					</Heading>
 
-					<p>Desarrollador / Músico / Diseñador</p>
+					<p>Desarrollador / Diseñador / Músico</p>
 				</Box>
 				<Box
 					flexShrink={0}
@@ -85,12 +85,13 @@ const Page = () => {
 
 			<Section delay={ 0.3 }>
 				<Heading 
+					mb={2}
 					as="h3"
 					variant="section-title"	
 				>
-					Work
+					Descripción
 				</Heading>
-				<Paragraph>Miguel es un desarrollador de aplicaciones, también es un fanático de la música, tiene un proyecto musical llamado { '' }
+				<Paragraph>Soy un desarrollador de aplicaciones, también un fanático de la música, tengo un proyecto musical llamado { '' }
 						<Link href="https://www.instagram.com/mitt_awing/">
 							Mitt Awing
 						</Link>
@@ -131,18 +132,22 @@ const Page = () => {
 				<Heading as="h3" variant="section-title">
 					Mis aficiones
 				</Heading>
-				<Paragraph>
+				<Paragraph>	
 					Art, Music ,{''}
-					<Link href="https://illust.odoruinu.net/">
-						 Drawing
+					<Link href="https://www.instagram.com/migankhel/">
+						PixelArt 
 					</Link>
-					,Making beats {''}
+					,  {' '}
+					<Link href="https://www.instagram.com/mitt_awing/">
+						Beats
+					</Link>	
+					 {''}
 				</Paragraph>
 			</Section>
 
 			<Section delay={0.3}>
 				<Heading as="h3" variant="section-title">
-					On the web
+					Redes Sociales
 				</Heading>
 				<List>
 					<ListItem>
@@ -160,9 +165,9 @@ const Page = () => {
 						</Link>
 					</ListItem>
 					<ListItem>
-						<Link href="https://twitter.com/home" target="_blank">
+						<Link href="https://twitter.com/MijelDev" target="_blank">
 							<Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoTwitter}/>}>
-								@mijelpalcabello
+								@MijelDev
 							</Button>
 						</Link>
 					</ListItem>
