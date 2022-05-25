@@ -8,6 +8,7 @@ import { WorkGridItem } from '../components/grid-item';
 import Jdilla from '../public/images/works/jdilla-gallery.png'
 import Clima from '../public/images/works/clima.png';
 import Ruleta from '../public/images/works/ruleta.png';
+import Mensajeria from '../public/images/works/mensajeria1.jpeg'
 
 const Works = () => {
 	
@@ -19,6 +20,11 @@ const Works = () => {
 			</Heading>
 
 			<SimpleGrid columns={[1, 1, 2]} gap={ 6 }>
+				<Section>
+					<WorkGridItem id="mensajeria" title="Mensajeria" thumbnail={ Mensajeria }>
+						Aplicación de mensajería
+					</WorkGridItem>	
+				</Section>
 				<Section>
 					<WorkGridItem id="jdilla" title="JDilla" thumbnail={ Jdilla }>
 						Una landing page de J Dilla
