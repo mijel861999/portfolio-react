@@ -45,8 +45,8 @@ const Navbar = props =>{
 			position="fixed"
 			as="nav"
 			w="100%"
-			bg={ useColorModeValue('#ffffff40', '#20202380')}
-			style={{ backdropFilter: 'blur(10px)' }}
+			bg={ useColorModeValue('#98A668', '#20202380')}
+			style={{ backdropFilter: 'blur(30px)' }}
 			zIndex={ 1 }
 			{ ...props }
 		>
@@ -109,11 +109,6 @@ const Navbar = props =>{
 									<MenuItem as={ Link }>
 										Posts
 									</MenuItem>
-								</NextLink>
-
-								
-								<NextLink href="https://www.craftz.dog/">
-									View Source
 								</NextLink>
 							</MenuList>
 						</Menu>

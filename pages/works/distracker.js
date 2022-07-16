@@ -4,21 +4,21 @@ import { Title, WorkImage, Meta } from '../../components/work';
 import P from '../../components/paragraph';
 import Layout from '../../components/layouts/article';
 
-const Mensajeria = () => {
+const Work = () => {
 	return( 
-		<Layout title="Mensajeria">
-			<Container>
+		<Layout title="Distracker">
+			<Container m={3}>
 				<Title>
-					Mensajeria <Badge>2022</Badge>
+					Distracker <Badge>2022</Badge>
 				</Title>
 				<Text color={useColorModeValue('white', 'black')}>
-					Una aplicación para poder intercambiar mensajes
+					Aplicación para poder organizar y puntuar albumes de música
 				</Text>
 				<List ml={4} my={4}>
 					<ListItem>
 						<Meta>Website</Meta>
-						<Link href="https://ruleta-react.vercel.app/">
-							https://github.com/mijel861999/react-express-message-application<ExternalLinkIcon mx="2px" />
+						<Link href="https://distracker.vercel.app/">
+							https://distracker.vercel.app/ <ExternalLinkIcon mx="2px" />
 						</Link>
 					</ListItem>
 					<ListItem>
@@ -27,17 +27,15 @@ const Mensajeria = () => {
 					</ListItem>
 					<ListItem>
 						<Meta>Stack</Meta>
-						<Text display='inline' color={useColorModeValue('white', 'black')}>React, Redux, React-router, Express, Mysql, socket, JSON Web tokens</Text>
-					</ListItem>	
+						<Text display='inline' color={useColorModeValue('white', 'black')}>React, Chakra UI</Text>
+					</ListItem>
 				</List>
 
-				<WorkImage src="/images/works/mensajeria1.JPG" alt="Aplicacion de mensajeria" />
-				<WorkImage src="/images/works/mensajeria2.JPG" alt="Aplicacion de mensajeria" />
+				<WorkImage src="/images/works/distracker.png" alt="Distracker" />
+				<WorkImage src="/images/works/distracker2.png" alt="Distracker" />
 			</Container>
 		</Layout>
 	)
 }
 
-export default Mensajeria;
-
-
+export default Work;

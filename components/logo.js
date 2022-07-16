@@ -21,12 +21,11 @@ const Logo = () => {
 			<a>
 				<LogoBox>
 					<Text
-						color={ useColorModeValue('gray.800', 'whiteAlpha.900') }
-						fontFamily='M PLUS Rounded 1c'
+						color='white'
 						fontWeight='bold'
 						ml={ 3 }
 					>
-						Miguel Castillo
+						Mijel
 					</Text>
 				</LogoBox>
 			</a>

@@ -9,6 +9,7 @@ import {
 	Link,
 	List,
 	ListItem,
+	Text,
 	useColorModeValue 
 } from '@chakra-ui/react';
 import { ChevronRightIcon } from '@chakra-ui/icons';
@@ -23,8 +24,6 @@ import {
 	IoLogoInstagram,
 	IoLogoGithub,
 } from 'react-icons/io5';
-
-
 
 const Page = () => {
 	return(
@@ -46,7 +45,8 @@ const Page = () => {
 			</Box>
 			<Box 
 				borderRadius="lg" 
-				bg={ useColorModeValue('whiteAlpha.500', 'whiteAlpha.200') } 
+				bg={ useColorModeValue('#98A668', '#FFFFFF') } 
+				color={useColorModeValue('white', 'black')}
 				mb={6} 
 				mt={6}
 				p={3} 
@@ -62,7 +62,7 @@ const Page = () => {
 						Miguel Castillo 
 					</Heading>
 
-					<p>Desarrollador / Diseñador / Músico</p>
+					<Text color={useColorModeValue('white', 'black')}>Desarrollador / Diseñador / Músico</Text>
 				</Box>
 				<Box
 					flexShrink={0}
@@ -91,12 +91,12 @@ const Page = () => {
 				>
 					Descripción
 				</Heading>
-				<Paragraph>Soy un desarrollador de aplicaciones, también un fanático de la música, tengo un proyecto musical llamado { '' }
+				<Text color={useColorModeValue('white', 'black')}>Soy un desarrollador de aplicaciones, también un fanático de la música, tengo un proyecto musical llamado { '' }
 						<Link href="https://www.instagram.com/mitt_awing/">
 							Mitt Awing
 						</Link>
 					.
-				</Paragraph>
+				</Text>
 				<Box align="center" my={4}>
 					<NextLink href="/works">
 						<Button rightIcon={ <ChevronRightIcon /> } colorScheme="teal">
@@ -106,33 +106,33 @@ const Page = () => {
 				</Box>
 			</Section>
 
-			<Section delay={0.3}>
+			<Section delay={0.3} color={useColorModeValue('white', 'black')}>
 				<Heading as="h3" variant="section-title">
 					Bio
 				</Heading>
-				<BioSection>
+				<BioSection color={useColorModeValue('white', 'black')}>
 					<BioYear>1999</BioYear>
 					Nací en Lima, Perú
 				</BioSection>
-				<BioSection>
+				<BioSection color={useColorModeValue('white', 'black')}>
 					<BioYear>2015</BioYear>
 					Termine el colegio en Saco oliveros
 				</BioSection>
-				<BioSection>
+				<BioSection color={useColorModeValue('white', 'black')}>
 					<BioYear>2016</BioYear>
 					Empecé a estudiar ingeniería de Industrial en la Universidad de ingeniería y tecnología (UTEC)
 				</BioSection>
-				<BioSection>
+				<BioSection color={useColorModeValue('white', 'black')}>
 					<BioYear>2019</BioYear>
 					Empecé a estudiar Ingeniería de sistemas en la Universidad Nacional Federico Villarreal
 				</BioSection>
 			</Section>
 			
 			<Section delay={0.3}>
-				<Heading as="h3" variant="section-title">
+				<Heading as="h3" variant="section-title" >
 					Mis aficiones
 				</Heading>
-				<Paragraph>	
+				<Text color={useColorModeValue('white', 'black')}>	
 					Art, Music ,{''}
 					<Link href="https://www.instagram.com/migankhel/">
 						PixelArt 
@@ -142,7 +142,7 @@ const Page = () => {
 						Beats
 					</Link>	
 					 {''}
-				</Paragraph>
+				</Text>
 			</Section>
 
 			<Section delay={0.3}>

@@ -1,4 +1,4 @@
-import { Container, Heading, SimpleGrid } from '@chakra-ui/react';
+import { Container, Heading, SimpleGrid, useColorModeValue, Text } from '@chakra-ui/react';
 
 import Layout from '../components/layouts/article';
 import Section from '../components/section';
@@ -9,6 +9,7 @@ import Jdilla from '../public/images/works/jdilla-gallery.png'
 import Clima from '../public/images/works/clima.png';
 import Ruleta from '../public/images/works/ruleta.png';
 import Mensajeria from '../public/images/works/mensajeria1.jpeg'
+import Distracker from '../public/images/works/distracker.png'
 
 const Works = () => {
 	
@@ -20,6 +21,11 @@ const Works = () => {
 			</Heading>
 
 			<SimpleGrid columns={[1, 1, 2]} gap={ 6 }>
+				<Section>
+					<WorkGridItem id='distracker' title='Distracker' thumbnail={ Distracker }>
+						<Text color={useColorModeValue('white', 'black')}>Aplicación de organización de albumes de música</Text>	
+					</WorkGridItem>
+				</Section>
 				<Section>
 					<WorkGridItem id="mensajeria" title="Mensajeria" thumbnail={ Mensajeria }>
 						Aplicación de mensajería
@@ -33,11 +39,6 @@ const Works = () => {
 				<Section>
 					<WorkGridItem id="clima" title="Clima" thumbnail={ Clima }>
 						Una aplicación del clima
-					</WorkGridItem>	
-				</Section>
-				<Section>
-					<WorkGridItem id="ruleta" title="Ruleta" thumbnail={ Ruleta }>
-						Una aplicación de ruleta
 					</WorkGridItem>	
 				</Section>
 			</SimpleGrid>
